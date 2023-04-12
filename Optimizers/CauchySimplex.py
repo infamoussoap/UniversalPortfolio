@@ -2,7 +2,7 @@ import numpy as np
 
 
 def cauchy_simplex(returns, gamma):
-	returns = np.array(returns)
+    returns = np.array(returns)
 
     T, N = returns.shape
 
