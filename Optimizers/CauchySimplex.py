@@ -15,7 +15,7 @@ def cauchy_simplex(returns, gamma):
         historic_weights[i] = w
 
         x = returns[i, :]
-        running_returns[i] = x @ w_old
+        running_returns[i] = x @ w
 
         grad = - x / (w @ x)
         dw_dt = w * (grad - w @ grad)
