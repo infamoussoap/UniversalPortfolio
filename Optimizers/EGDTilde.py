@@ -24,4 +24,4 @@ def egd_tilde(returns, alpha, eta):
         w = w * np.exp(eta * grad)
         w = w / np.sum(w)
 
-    return np.prod(running_returns)
+    return np.prod(running_returns), historic_weights
