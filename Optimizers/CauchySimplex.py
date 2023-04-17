@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def cauchy_simplex(returns, gamma):
+def cauchy_simplex(returns, eta):
     returns = np.array(returns)
 
     T, N = returns.shape
@@ -20,7 +20,7 @@ def cauchy_simplex(returns, gamma):
         grad = - x / (w @ x)
         dw_dt = w * (grad - w @ grad)
 
-        w = w - gamma * dw_dt
+        w = w - eta * dw_dt
         w = w / np.sum(w)
 
         assert np.all(w >= 0)
