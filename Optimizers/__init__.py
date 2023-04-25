@@ -5,3 +5,5 @@ from .EGD import egd
 from .EGDTilde import egd_tilde
 
 from .Newton import newton
+
+from .BuyAndHold import buy_and_hold
