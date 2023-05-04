@@ -1,3 +1,4 @@
+*.csv
 ignore_files
 .ipynb_checkpoints
 *.ipynb
